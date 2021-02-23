@@ -1,0 +1,173 @@
+HTMLResult Skip Results Iframe
+EDIT ON
+<!doctype html>
+<html>
+  <head>
+    <title>JS-less navigation</title>
+    <style>
+      html, body {
+        width:100%;
+        height:100%;
+        margin:0px;
+        padding:0px;
+        font-size: 16px;
+        font-family: Helvetica;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      *:active {
+        outline:none;
+      }
+
+      #content {
+        display:grid;
+        grid-template-columns: 150px auto;
+        height:100%;
+      }
+
+      #nav {
+        width: 100%;
+        height: 50px;
+        text-align:center;
+        height:100%;
+        background-color:#ffcc88;
+
+      }
+
+      #nav a {
+        line-height:50px;
+        text-decoration:none;
+        color: black;
+        font-variant:small-caps;
+        font-size: 32px;
+        display: block;
+      }
+
+      #nav a:hover {
+        background-color: rgba(0,0,0,0.1)
+      }
+
+      main {
+        display:inline-block;
+        margin:0px;
+        height:100%;
+      }
+
+      .page {
+        display: none;
+        background-color:#ffeecc;
+        padding-left:20px;
+        padding-top:20px;
+        margin:0px;
+        height: 100%;
+      }
+
+      .page h1 {
+        margin:0px;
+      }
+
+      .default {
+        display:block;
+      }
+
+      :target {
+        display:block;
+      }
+
+      :target ~ .default {
+        display:none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <nav id="nav">
+        <a href="#page1">Page 1</a>
+        <a href="#page2">Page 2</a>
+        <a href="#page3">Page 3</a>
+        <a href="#page4">Page 4</a>
+        <a href="#page5">Page 5</a>
+      </nav>
+      <main>
+        <div id="page2" class="page">
+          <h1>Page 2</h1>
+          <p>And this is the second page!</p>
+          <section class="competences">
+              <h1>COMPETENCES</h1>
+              <h2>WEB /COM /PRINT</h2>
+              <p>Projet d’étude client (front, react, material UI) organisé en daily stand-up et méthode agile</p>
+              <p>/// Maîtrise suite Adobe</p>
+              <p>/// Rédaction de brèves, articles, interviews, newsletters,communiqués de presses</p>
+              <p>/// Conception et intégration d’emailing</p>
+              <p>/// Organisation d’événements internes et externes, réalisation de projets événementiels</p>
+              <p>/// Coordination du développement publicitaire</p>
+              <p>/// Illustration graphique, création d’identité visuelle, deplaquettes commerçiales</p>
+              <p>/// Réalisation de maquettes de sites web, de bannières publicitaires, création et animation de pages sur les réseaux</p>
+              <p>/// Langues parlées : Français/ Anglais</p>
+          </section>
+        </div>
+        <div id="page3" class="page">
+          <h1>Page 3</h1>
+          <p>Okay... This is the third page...</p>
+          <section class="experience">
+            <h1>EXPERIENCES PROFESIONNELLES</h1>
+            <p>/// Graphiste-Projets professionnels Réalisation de travaux graphiques Paris - 2018/2019</p>
+            <p>/// Aidant familial Paris - 2015/2017</p>
+            <p>/// Chargée de communication interne / Graphiste - Mairie de Paris (Portail Paris fournisseurs-Sequana)-Promotion des services Sequana auprès de l’ensemble des directions de la Ville à travers ses supports de communication -Paris - Novembre 2013/Décembre 2014</p>
+            <p>/// Graphiste freelance -DarkPixel Studio Montréal (Agence en communication digitale) Montréal, Qc - Septembre 2012/Juin 2013</p>
+            <p>/// Webdesign -Groupe LES ECHOS (Journal Economique) Paris, France - Février 2011/Sept. 2011</p>
+            <p>/// Graphisme -Voyages Inédits (Agence de voyages) Paris, France - Août 2010</p>
+            <p>/// Graphisme -OZE (Restaurant rapide) Val-de-Marne, France - Juillet 2010</p>
+            <p>/// Graphisme -Association Messagers de la Paix (ONG - Bénin, Cotonou - Août 2009/Oct. 2009</p>
+            <p>/// Communication événementielle Graphisme -FNAR (Fédération Nationale des Associations Régionales) Paris, France - Juillet 2008/Oct 2008</p>
+            <p>/// Communication Marketing Graphisme -Revue Cassandre (Revue artistique)Paris, France - Février 2007/Avril 2007</p>
+        </section>
+        </div>
+        <div id="page4" class="page">
+          <h1>Page 4</h1>
+          <p>Uhh... Fourth page?</p>
+          <section class="formation">
+            <h1>FORMATIONS</h1>
+            <p>2021- DESCODEUSES</p>
+            <p>MA Paris 2019 - Illustration (Etude de différents registres techniques via l’image narrative / Expression du trait graphique, croquis</p>
+            <p>Wild code School -2018 - Formation numérique</p>
+            <p>Programme Etincelles (Social Builder) -Janvier 2016-Juin 2016 Dispositif d’accompagnement innovant de jeunes femmes diplômées du supérieur vers les métiers du numérique et la création de startup.</p>
+            <p>Master 2 Création et Edition Numériques- 2011- Université Vincennes St Denis - France</p>
+            <p>Master 1 Publicité option Direction Artistique -2009 - Ecole Sup de Pub - France</p>
+            <p>Licence Information et Communication -2007 - Université Sorbonne-Nouvelle - France</p>
+        </section>
+        </div>
+        <div id="page5" class="page">
+          <h1>Page 5</h1>
+          <section class="contact">
+            <p>Still herDDDDDDDDDDDDDDDe? Fine, fifth page...</p>
+
+          </section>
+        </div>
+        <div id="page1" class="page default">
+          <h1>Page 1</h1>
+          <p>This is the first page!</p>
+          <section class="presentation">
+            <h1>Helena-Charlotte Domlan</h1>
+            <h2>WEB DEVELOPPPEMENT</h2>
+            <h3>GRAPHISME WEBDESIGN</h3>
+            <p>Hello !</p>
+            <a href="https://www.krop.com/lna-charlotte/">///Portflio///https://www.krop.com/lna-charlotte/</a>
+            <div><img class="logo" src="images/lna-charlotte-49f248dc6417c.jpg" alt="logo"></div>
+  <!-- FERMETURE presentation -->
+  <!-- PROFIL -->
+          <section class="profil">
+            <h1>PROFIL</h1>
+            <p>/// 3 années d’expérience dans le graphisme, le webdesign et la communication</p>
+            <p> Aptitude pour l’organisation, le suivi d’un projet et le travail en équipe</p>
+            <p>/// Sens des responsabilités et de l’initiative</p>
+        </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

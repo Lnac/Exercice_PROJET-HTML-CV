@@ -1,0 +1,36 @@
+/* The Scroll behavior */
+body {
+  scroll-behavior: smooth;
+  width:100%
+}
+
+
+
+/* Just some styles to take place*/
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.7;
+}
+nav {
+  position: sticky;
+  top: 0;
+  background: #364452;
+  text-align: center;
+}
+nav a {
+  display: inline-block;
+  margin: 1em;
+  color: #FFF;
+}
+.item {
+  padding: 3em 1em 1em;
+  min-height: 100vh;
+  font-size: 1.4em;
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.item:nth-child(odd) {
+  background: #F2F2F2;
+}

@@ -1,0 +1,76 @@
+html {
+  scroll-behavior: smooth;
+
+}
+
+
+body {
+  /* background-color: blue; */
+
+  background-attachment: fixed;
+  font-family: 'Open Sans', sans-serif;
+
+  /* font-size: 15%; */
+}
+/* ---------EFFET NAV SCROLL---------- */
+a {
+  display: inline-block;
+  width: auto;
+  text-decoration: none;
+}
+nav, scroll-container {
+  position: sticky;
+
+  display: block;
+  margin: 0 auto;
+  text-decoration:none;
+}
+nav {
+  position: sticky;
+
+
+  width: auto;
+  padding: 5px;
+  border: 1px solid black;
+  /* position: -webkit-sticky;
+  position: sticky; */
+/* }
+scroll-container {
+
+  position: sticky;
+display: block;
+  width: 100%;
+  height: auto;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  position: -webkit-sticky;
+  top: 0px;
+}
+scroll-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1em;
+} */
+/* ---------FIN EFFET NAV SCROLL---------- */
+/* --------- HEADER---------- */
+.logo {
+  display: block;
+  /* display: flex; */
+  /* position: relative;
+  top: ;
+  left: ; */
+  background-color: red;
+  /* background-position: left % top %; */
+}
+.logo h1 h2 {
+  flex-direction: column;
+
+}
+.page1 *{
+  display: flex;
+}
+h1, h2{
+  width: 100%;
+}
