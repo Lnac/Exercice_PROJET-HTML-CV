@@ -1,0 +1,396 @@
+
+/* html #content #main #page{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x proximity;
+} */
+/* NAVBAR */
+  html, body {
+    width:100%;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
+
+  }
+
+/* *tous les éléments d'une page  */
+  * {
+    box-sizing: border-box;
+  }
+  /* ne cible * que lorsqu'il est activé */
+  /* par exemple quand on clique dessus */
+  *:active {
+    outline:none;
+  }
+
+  /* -------------------------------------------------
+  CONTENT le content influe sur la proportion de la colonne NAV
+-----------------------------------------------------*/
+  #content {
+    display:grid;
+    grid-template-columns: 200px auto;
+    height:100%;
+    box-shadow: 0 8px 6px -6px #999;
+    padding:: 15px;
+    font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
+
+  }
+  /* FIN CONTENT
+  _______________________________________*/
+/* ---------------------------------------
+NAVBAR
+------------------------------------------ */
+  #nav {
+    width: 100%;
+    height: 50px;
+    text-align:left;
+    height:100%;
+    /* background-color:#ffcc88; */
+    background-color: white;
+    color: #3E4147;
+    box-shadow: 3px 3px 6px #d4d6d8;
+    background-position: 5px;
+    background-color: #EAECEF;
+    font-family: 'Oswald', sans-serif;
+
+  }
+
+  #nav a {
+    line-height:50px;
+    text-decoration:none;
+    color: black;
+    font-variant:small-caps;
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    display: block;
+    /* position: relative; right:  */
+    padding-left: 20px;
+  }
+
+  #nav a:hover {
+    background-color: #CC4425;
+    font-family: 'Oswald', sans-serif;
+    font-size: 150%;
+    color: white;
+  }
+
+  main {
+
+    display:inline-block;
+    margin:0px;
+    height:100%;
+  }
+
+  .page {
+    display: none;
+    padding-left:120px;
+    padding-top:20px;
+    margin:0px;
+    height: 100%;
+  }
+
+  .page h1 {
+    margin:0px;
+  }
+
+  .default {
+    display:block;
+  }
+
+  :target {
+    display:block;
+  }
+/* REMARQUE La pseudo-classe :target permet de cibler l'unique élément (s'il existe) dont l'attribut id correspond au fragment d'identifiant de l'URI du document.*/
+/* Le combinateur '~' permet de sélectionner les nœuds qui suivent un élément et qui ont le même parent. */
+/* ~ sert à cibler un frère de l'élément sans qu'il soit forcément juste derrière.
+Contrairement à + qui ciblerait un frère immédiatement après (adjacent)*/
+.:target ~ .default { */
+    display:none;
+  }
+/* FIN NAVBAR
+_______________________________________*/
+
+
+/* ------------------------------------
+PRESENTATION
+------------------------------------ */
+#presentation h1{
+  margin-top: 3%;
+}
+
+.presentation h1, h2, h4 p {
+  font-family: 'Oswald', sans-serif;
+}
+
+.presentation h2 {
+  position: relative;
+  top: -35px; left: 2px;
+  font-size: 200%;
+  color: #CC4425;
+  padding-top: 1px;
+  /* border-top: 50px; */
+}
+
+.presentation h1 {
+    font-size: 600%;
+    position: relative;
+    top: 20%;
+ }
+
+.presentation h4{
+  /* float: left; */
+  position: relative;
+  top: 50px; left: 2px;
+  font-family: 'Oswald', sans-serif;
+  color: #CC4425;
+}
+
+
+.presentation hr {
+ position: absolute;
+ width: 53%;
+ margin-bottom: 80%;
+ color: #EAECEF;
+}
+
+.presentation img{
+  margin-top: 5%;
+}
+
+strong {
+  color: #CC4425;
+  /* color: black; */
+  font-size: 35px;
+  text-shadow:;display:box; background: #141414; padding: 7px;color:#fff;
+  background-color:#3E4147;
+}
+
+.logo img {
+  width: 50%;
+  background-position: top;
+}
+.triangle{
+ display : inline-block;
+ height : 0;
+ width : 0;
+ border-bottom : 179px solid red;
+ border-left : 179px solid transparent;
+}
+
+.social-box{}
+
+#social-box a img{
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+
+#social-box a:hover img{
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+
+
+/* FIN HEADER
+_______________________________________*/
+
+
+
+/* ------------------------------------
+COMPETENCES
+------------------------------------ */
+/* COMPETENCES */
+.competences{}
+/* FIN COMPETENCES */
+
+/* EXPERIENCES */
+.experience{}
+/* FIN EXPERIENCES */
+
+/* FORMATION */
+.formation{}
+/* FIN FORMATION
+_______________________________________*/
+
+/* FOOTER */
+.footer{}
+/* FIN FOOTER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------
+EXEMPLE POUR UNE TIMELINE A APPLIQUER POUR LA SECTION EXPERIENCE
+----------------------------------------------------------- */
+/* test */
+/* *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+  background: #456990;
+  color: #fff;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+} */
+
+
+/* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* .intro {
+  background: #F45B69;
+  padding: 100px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+} */
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* .timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #F45B69;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #F45B69 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #F45B69;
+} */
+
+/* <main>
+  <sidenav>
+    <a href="#aboutMe">ABOUT ME !</a>
+    <a href="#competences">COMPETENCES</a>
+    <a href="#experiences">EXPERIENCES</a>
+    <a href="#formation">FORMATION</a> <!-- probleme bloc formation -->
+    <a href="#contact">ME CONTACTER</a>
+  </sidenav>
+  <section id="competences">
+    <h2>COMPETENCES</h2>
+    <h2>WEB /COM /PRINT</h2>
+    <p>///Projet d’étude client (front, react, material UI) organisé en daily stand-up et méthode agile</p>
+    <p>/// Maîtrise suite Adobe</p>
+    <p>/// Rédaction de brèves, articles, interviews, newsletters,communiqués de presses</p>
+    <p>/// Conception et intégration d’emailing</p>
+    <p>/// Organisation d’événements internes et externes, réalisation de projets événementiels</p>
+    <p>/// Coordination du développement publicitaire</p>
+    <p>/// Illustration graphique, création d’identité visuelle, deplaquettes commerçiales</p>
+    <p>/// Réalisation de maquettes de sites web, de bannières publicitaires, création et animation de pages sur les réseaux</p>
+    <p>/// Langues parlées : Français/ Anglais</p>
+  </section>
+  <section id="experiences">
+    <h2>EXPERIENCES PROFESIONNELLES</h2>
+    <p>/// Graphiste-Projets professionnels Réalisation de travaux graphiques Paris - 2018/2019</p>
+    <p>/// Chargée de communication interne / Graphiste - Mairie de Paris (Portail Paris fournisseurs-Sequana)-Promotion des services Sequana auprès de l’ensemble des directions de la Ville à travers ses supports de communication -Paris - Novembre 2013/Décembre 2014</p>
+    <p>/// Graphiste freelance -DarkPixel Studio Montréal (Agence en communication digitale) Montréal, Qc - Septembre 2012/Juin 2013</p>
+    <p>/// Webdesign -Groupe LES ECHOS (Journal Economique) Paris, France - Février 2011/Sept. 2011</p>
+    <p>/// Graphisme -Voyages Inédits (Agence de voyages) Paris, France - Août 2010</p>
+    <p>/// Graphisme -OZE (Restaurant rapide) Val-de-Marne, France - Juillet 2010</p>
+    <p>/// Graphisme -Association Messagers de la Paix (ONG - Bénin, Cotonou - Août 2009/Oct. 2009</p>
+    <p>/// Communication événementielle Graphisme -FNAR (Fédération Nationale des Associations Régionales) Paris, France - Juillet 2008/Oct 2008</p>
+    <p>/// Communication Marketing Graphisme -Revue Cassandre (Revue artistique)Paris, France - Février 2007/Avril 2007</p>
+  </section>
+  <section id="formation">
+    <h2>FORMATIONS</h2>
+    <p>2021- DESCODEUSES</p>
+    <p>MA Paris 2019 - Illustration (Etude de différents registres techniques via l’image narrative / Expression du trait graphique, croquis</p>
+    <p>Wild code School -2018 - Formation numérique</p>
+    <p>Programme Etincelles (Social Builder) -Janvier 2016-Juin 2016 Dispositif d’accompagnement innovant de jeunes femmes diplômées du supérieur vers les métiers du numérique et la création de startup.</p>
+    <p>Master 2 Création et Edition Numériques- 2011- Université Vincennes St Denis - France</p>
+    <p>Master 1 Publicité option Direction Artistique -2009 - Ecole Sup de Pub - France</p>
+    <p>Licence Information et Communication -2007 - Université Sorbonne-Nouvelle - France</p>
+  </section>
+  <section id="contact">
+    <h2>Me contacter</h2>
+    <p>formulaire contact</p>
+    <p><a href="mailto:someone@yoursite.com?cc=someoneelse@theirsite.com, another@thatsite.com, me@mysite.com&bcc=lastperson@theirsite.com&subject=Big%20News">Envoyer un message :)</a></p>
+  </section>
+  <section id="aboutMe!">
+    <img class="logo" src="images/lna-charlotte-49f248dc6417c.jpg" alt="logo" width="37%">
+    <h4>ABOUT ME///</h4>
+    <h1>HELENA-C. DOMLAN</h1>
+    <h2><strong>WEB DEVELOPPEMENT///</strong> GRAPHISME WEBDESIGN</h2>
+    <!-- <h3>GRAPHISME WEBDESIGN</h3> -->
+    <!-- <div><img class="logo" src="images/lna-charlotte-49f248dc6417c.jpg" alt="logo"></div> -->
+    <hr>
+    <div id="social-box">
+      <a href="https://github.com/Lnac"><img src="images/iconfinder_Github_social_media_logo_1964417.png" alt="logo-github" width="54px"></a>
+      <a href="https://wwSw.krop.com/lna-charlotte/"><img src="images/Folder-2-512.webp" alt="portfoliokrop" width="53px"></a>
+      <a href="#"><img src="images/linkedin.png" alt="logo-linkedin"></a>
+    </div>
+  </section> */
